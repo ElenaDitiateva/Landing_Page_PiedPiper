@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 20px 55px;
+}
+
+header {
+    background: #007765;
+    color: #FFFFFF;
+}
+
+.logo {
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.nav-item {
+    padding: 0 15px;
+    border-right: #FFFFFF solid 1px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav>span:last-child>a {
+    border: none;
+}
+
+.section1 {
+    background: url(../img/Jumbotron.png) no-repeat center / cover;
+    color: #FFFFFF;
+}
+
+h1 {
+    padding: 80px 0;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.section2,
+.section5 {
+    background-color: #EEEEEE;
+}
+
+h2 {
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #007765;
+    font-weight: 400;
+}
+
+p {
+    margin: 0 auto;
+}
+
+.text-content {
+    margin-bottom: 50px;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: left;
+    color: #000000;
+}
+
+.section3 {
+    background: url(../img/Hero.png) no-repeat center / cover;
+    color: #FFFFFF;
+}
+
+.text-section3 {
+    max-width: 893px;
+    padding: 50px 0;
+    font-size: 48px;
+    font-style: italic;
+    line-height: 56px;
+    text-align: center;
+}
+
+.section4 {
+    background-color: #FFFFFF;
+}
+
+.section4 img {
+    margin-right: 50px;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    margin-bottom: 50px;
+}
+
+.team-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-item h4 {
+    margin: 12px 0 0 0;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #007765;
+}
+
+.team-item p {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 21px;
+    text-align: center;
+}
+
+footer {
+    padding: 50px;
+    background: #333333;
+    color: #FFFFFF;
+}
+
+.text-footer {
+    max-width: 540px;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+
+@media screen and (max-width: 575px) {
+
+    .logo>img {
+        width: 123px;
+        height: 30px;
+    }
+
+    .align-end {
+        align-items: flex-end;
+    }
+
+    .nav-item {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 10px 30px;
+    }
+
+    h1,
+    h2 {
+        font-size: 32px;
+    }
+
+    h1 {
+        padding: 50px 0;
+    }
+
+    .text-content {
+        font-size: 20px;
+    }
+
+    .text-section3 {
+        font-size: 26px;
+    }
+
+    .team {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-row-gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    .justify-center {
+        justify-content: center;
+    }
+
+    .justify-end {
+        justify-content: flex-end;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    .section4>div>div>img {
+        margin: 0 0 30px 0;
+        width: 75px;
+        height: 75px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .text-footer {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 849px) {
+
+    .logo>img {
+        width: 123px;
+        height: 30px;
+    }
+
+    .align-end {
+        align-items: flex-end;
+    }
+
+    .nav-item {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 10px 30px;
+    }
+
+    h1,
+    h2 {
+        font-size: 32px;
+    }
+
+    h1 {
+        padding: 50px 0;
+    }
+
+    .text-content {
+        font-size: 20px;
+    }
+
+    .text-section3 {
+        font-size: 26px;
+    }
+
+    .team {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 30px;
+        margin: 0;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    .justify-center {
+        justify-content: center;
+    }
+
+    .justify-end {
+        justify-content: flex-end;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    .section4>div>div>img {
+        margin: 0 0 30px 0;
+        width: 75px;
+        height: 75px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .text-footer {
+        font-size: 14px;
+    }
+}
